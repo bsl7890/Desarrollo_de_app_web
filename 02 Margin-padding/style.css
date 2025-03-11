@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px rgb(0, 0, 0);
+}
+.container{
+    width: 950px;
+    height: 600px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    padding: 20px;
+    display: 100%;
+}
+.top-nav{
+    width: 100%; /* ancho total pantalla*/
+    height: 150px;/* altura */
+    background-color: green;
+}
+.main{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between; /* Separar el azul y el rojo */
+}
+
+.left{
+    height: 300px;
+    background-color: blue;
+    flex: 1;
+    margin-right: 20px; /* Espacio entre el azul y el rojo */
+}
+
+.right{
+    height: 375px;
+    background-color: red;
+    flex: 3; /* Que se ajuste al tamaño del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.right .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .top div{
+    width: 210px; /* Ancho fijo para que sean cuadrados */
+    height: 210px; /* Altura fija para que sean cuadrados */
+    background-color: yellow;
+    margin-right: 20px; /* Espacio entre los cuadrados */
+}
+
+.right .top div:last-child{
+    margin-right: 0; /* Eliminar margen derecho del último div */
+}
+
+.right .bottom{
+    background-color: purple;
+    height: 100px;
+    width: 100%; /* Ajustar el ancho para que coincida con los elementos amarillos */
+    position: relative;
+    top: -30px;
+}
