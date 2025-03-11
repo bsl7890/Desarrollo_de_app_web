@@ -1,12 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid 1px rgb(0, 0, 0);
 }
 .container{
     width: 950px;
     height: 600px;
-    background-color: #f1f1f1;
+    background-color: #e7dfdf;
     margin: 0 auto;
     padding: 20px;
     display: 100%;
@@ -37,6 +36,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    padding-right: 50px;
 }
 
 .right .top{
@@ -48,7 +48,7 @@
     width: 210px; /* Ancho fijo para que sean cuadrados */
     height: 210px; /* Altura fija para que sean cuadrados */
     background-color: yellow;
-    margin-right: 20px; /* Espacio entre los cuadrados */
+    margin-right: 15px; /* Espacio entre los cuadrados */
 }
 
 .right .top div:last-child{
@@ -56,9 +56,9 @@
 }
 
 .right .bottom{
-    background-color: purple;
-    height: 100px;
+    background-color: purple;    
     width: 100%; /* Ajustar el ancho para que coincida con los elementos amarillos */
     position: relative;
-    top: -30px;
+    top: -35px;
+    height: 105px; /* Ajustar la altura para que no se vea */
 }
