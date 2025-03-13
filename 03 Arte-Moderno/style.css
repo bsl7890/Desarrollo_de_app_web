@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px purple;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border: 5px solid rgb(156, 156, 156);
+
+}
+
+.box {
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    width: 329px;
+    height: 329px;
+    top: 0px;
+    left: 161px;
+}
+
+.blue {
+    background-color: blue;
+    width: 140px;
+    height: 145px;
+    bottom: 0;
+    left: 0;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 50px;
+    height: 60px;
+    bottom: 0;
+    right: 1px;
+    top: 429px;
+}
+
+.white1 {
+    background-color: white;
+    width: 140px;
+    height: 150px;
+    top: 0px;
+    left: 0;
+}
+
+.white2 {
+    background-color: white;
+    width: 140px;
+    height: 160px;
+    top: 170px;
+    left: 0px;
+}
+
+.white3 {
+    background-color: white;
+    width: 260px;
+    height: 145px;
+    bottom: 0;
+    left: 160px;
+}
+
+.white4 {
+    background-color: white;
+    width: 50px;
+    height: 60px;
+    bottom: 60px; /* Ajusta la posición para estar justo arriba de la caja amarilla */
+    right: 1px;
+    position: absolute;
+    top: 345px;
+}
