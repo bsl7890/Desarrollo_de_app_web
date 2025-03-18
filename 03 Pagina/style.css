@@ -1,0 +1,73 @@
+/* Reset de márgenes y tamaños */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    width: 1000px;
+    height: 700px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header {
+    background: black;
+    color: rgb(0, 255, 255);
+    font-size: 50px; 
+    padding: 15px; 
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Estilos para "MY" en aqua */
+.highlight {
+    color: white;
+}
+
+/* Sección de proyectos */
+.projects {
+    background: rgb(102, 51, 153);
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Contenido */
+.content {
+    background: rgb(159, 197, 248);
+    font-size: 22px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.contact h3 {
+    margin: 0;
+}
+
+.contact a {
+    color: rgb(21, 12, 69);
+    text-decoration: underline;
+    font-weight: bold;
+}
