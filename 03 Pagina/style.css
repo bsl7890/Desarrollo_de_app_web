@@ -1,11 +1,9 @@
-/* Reset de márgenes y tamaños */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
     display: flex;
     justify-content: center;
@@ -23,7 +21,6 @@ body {
     padding: 20px;
 }
 
-/* Encabezado */
 .header {
     background: black;
     color: rgb(0, 255, 255);
@@ -36,12 +33,10 @@ body {
     font-size: 50px;
 }
 
-/* Estilos para "MY" en aqua */
 .highlight {
     color: white;
 }
 
-/* Sección de proyectos */
 .projects {
     background: rgb(102, 51, 153);
     color: white;
@@ -52,7 +47,6 @@ body {
     text-align: center; 
 }
 
-/* Contenido */
 .content {
     background: rgb(159, 197, 248);
     font-size: 22px;
