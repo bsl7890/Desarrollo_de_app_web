@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.margin {
+    width: 70%;
+    height: 825px;
+    background-color: rgb(209, 91, 25);
+    padding: 30px 50px 50px 50px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.margin p{
+    margin-top: 10px;
+
+}
+.border {
+    background-color: rgb(229,166,133); /* Color del borde */
+    padding: 30px 50px 50px 50px;
+    border: 40px solid rgb(209,91,25);
+}
+
+.padding {
+    background-color: rgb(69,159,199); /* Color del padding */
+    padding: 30px 50px 50px 50px;
+    border: 40px solid rgb(229,166,133);
+}
+
+.content {
+    background-color: rgb(159,202,224); /* Color del contenido */
+    padding: 100px 50px 100px 50px;
+    border: 40px solid rgb(69,159,199);
+}
