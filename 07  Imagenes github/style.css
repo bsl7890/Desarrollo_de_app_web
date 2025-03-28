@@ -21,8 +21,7 @@ h1 {
     align-items: center;
 
 }
-
-.row1, .row2, .row3 {
+.row1, .row2, .row3, .row4 ,.row5 {
     display: flex;
     padding: 10px;
     width: 750px;
@@ -42,10 +41,17 @@ h1 {
 .row3 {
     background-color: #ffffff;
     justify-content: space-evenly;
-}   
+}
+.row4 {
+    background-color: #5dc9d3; 
+    justify-content: space-evenly;
+}
+.row5 {
+    background-color: #d896ef;
+    justify-content: space-evenly;
+}  
 
 img.octocat {
     height: 200px;
-    background-color: white;
     padding: 10px;
 }
