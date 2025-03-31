@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.col, .col-2, .col-3 {
+    background-color: #5a99a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px; 
+}
+
+.col-2 {
+    flex: 2;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.col-3 {
+    flex: 3;
+    padding: 20px;
+    margin-right: 10px;
+}
