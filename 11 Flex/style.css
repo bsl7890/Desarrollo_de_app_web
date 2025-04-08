@@ -29,11 +29,10 @@ header h1 {
 }
 nav {
     background-color: #34495e;
-    padding: 15px;
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 25px
+    margin-top: 25px;
 }
 nav a{
         color: white;
