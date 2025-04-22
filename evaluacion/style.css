@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    padding: 50px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 25px;
+}
+.menu .about a{
+    color: rgb(0, 0, 0);
+}
+.redes ul {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 25px;
+}
+.redes a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+.menu a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+.contenido {
+    background: rgb(255, 255, 255);
+    width: 70%;
+    height: 100%;
+    margin: 25px auto;
+    padding: 25px;
+    display: flex;
+}
+.perfil  {
+    display: flex;
+    flex-direction: column;
+
+}
+.foto{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.perfil h1 {
+    margin-bottom: 25px;
+    margin-top: 50px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif
+}
+.perfil p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family:'Times New Roman', Times, serif
+}
