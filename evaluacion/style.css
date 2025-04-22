@@ -18,9 +18,9 @@ header {
 }
 /* Estilos del titulo */
 header h1 {
-    font-size: 20px;
+    font-size: 26px;
     color: rgb(0, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 /* Estilos de la barra de navegación */
 .menu ul{
@@ -54,7 +54,7 @@ header h1 {
 /* Estilos del contenedor principal */
 .contenido {
     background: rgb(255, 255, 255);
-    width: 70%;
+    width: 74%;
     height: 100%;
     margin: 25px auto;
     padding: 25px;
@@ -77,13 +77,12 @@ header h1 {
 /* Nombre de la persona */
 .perfil h1 {
     margin-bottom: 25px;
-    margin-top: 50px;
+    margin-top: 75px;
     font-size: 35px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Descripción de la persona */
 .perfil p{
     font-size: 20px;
     margin-bottom: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
