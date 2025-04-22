@@ -16,6 +16,7 @@ header {
 header h1 {
     font-size: 20px;
     color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .menu ul{
@@ -31,7 +32,6 @@ header h1 {
 .redes ul {
     display: flex;
     gap: 30px;
-    text-decoration: none;
     list-style: none;
     margin-right: 25px;
 }
@@ -66,10 +66,10 @@ header h1 {
     margin-bottom: 25px;
     margin-top: 50px;
     font-size: 35px;
-    font-family:'Times New Roman', Times, serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .perfil p{
     font-size: 20px;
     margin-bottom: 25px;
-    font-family:'Times New Roman', Times, serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
