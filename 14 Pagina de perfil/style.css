@@ -35,8 +35,9 @@ body {
 
 .col4 {
     background-color: #17a2b8;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
+    border-radius: 5px;
     box-shadow: 3px 3px 0px black;
     cursor: pointer;
 }
@@ -45,27 +46,29 @@ body {
     font-weight: bold;
 }
 
-/* MAIN CONTENT */
 .main-container {
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
     padding: 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+
 }
 
-/* PERFIL */
 .profile {
     background-color: white;
-    width: 750px;
+    width: 40%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 400px;
+    flex: 2;
 }
 
 .header {
-    background-color: #0097a7;
+    background-color: #3798dc;
     height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -87,78 +90,60 @@ body {
     font-weight: bold;
 }
 
-.ubicacion, .info, .editar {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    font-size: 14px;
-    
-}
 
-.editar {
-    color: rgb(77,141,233);
+.ubicacion {
+    color: gray;
     font-weight: bold;
+    font-size: 15px;
 }
 
-.right-panel {
+.info {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: -5px;
+}
+.editar {
     display: flex;
-    gap: 20px;
-    flex-direction: column;
     align-items: center;
+    color: #53abe2;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 40px;
+    gap: 10px;
+}
+.editar img {
+    width: 15px;
+    height: 20px;
+    margin: 10px 0;
+    color: #53abe2;
 }
 .card-conexiones{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 100px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    width: 440px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.1);
+    flex: 1;
 }
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    padding: 20px;;
-    height: 240px;
-
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: -20px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.1);
+    flex: 1;
 }
 
-.card h3 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-.card span{
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-}
 
-.user-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-}
 
-.acciones {
-    font-size: 18px;
-    color: green;
-}
-
-.card ul {
-    list-style: none;
-}
-
-.card ul li {
-    padding: 5px 0;
-    font-weight: bold;
-}
 .action-buttons {
-    display: flex;
-    gap: 10px;
-    margin-left: 200px;
-    margin-top: -30px;
+    margin-top: -2px;
 }
 
 .action-buttons button {
@@ -168,10 +153,6 @@ body {
     padding: 0;
 }
 
-.action-buttons img {
-    width: 24px;
-    height: 24px;
-}
 .action-buttons img:hover {
     transform: scale(1.2);
 }
@@ -179,37 +160,12 @@ body {
     transform: scale(1.2);
 }
 
-.ubicacion, .editar {
-    display: flex;
-    margin: 10px 0;
-    gap: 2px
-}
-.editar {
-    color: rgb(77,141,233); 
-}
 
-.ubicacion img, .editar img {
-    width: 15px;
-    height: 20px;
-    margin: 10px 0;
-}
-
-.card ul li img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-
-}
-.card, .card-conexiones {
-    width: 450px; 
-}
 .solicitud {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 10px;
 }
 
 .avatar-small {
@@ -218,17 +174,14 @@ body {
     border-radius: 50%;
     margin-right: 10px;
 }
-
-.nombre {
-    flex-grow: 1;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 10px;
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .solicitud .action-buttons {
     display: flex;
-    gap: 10px;
 }
 
 .solicitud .action-buttons button {
@@ -249,7 +202,37 @@ body {
     margin-right: 10px;
     border-radius: 50%;
 }
-.card ul li{
-    list-style: none;
+.card-conexiones ul li {
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nombre {
+    font-size: 15px;
+    margin-right: 120px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.card-conexiones a{
+    color: #57aae1;
+    font-weight: bold;
+    margin-left: 36%;
     text-decoration: none;
+    border: solid 2px #57aae1;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.card a{
+    color: #57aae1;
+    font-weight: bold;
+    margin-left: 17%;
+    text-decoration: none;
+    border: solid 2px #57aae1;
+    padding: 5px 10px;
+    margin-top: -5px;
+    font-size: 16px
 }
