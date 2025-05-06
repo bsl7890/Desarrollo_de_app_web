@@ -1,4 +1,4 @@
-console.log("Conexion establecida")
+console.log("--------Conexion establecida--------")
 
 // Paso 1: Declaración de variables
 let numeroEntero = 10;
