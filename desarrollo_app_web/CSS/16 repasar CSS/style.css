@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    background-color: #797979;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 18%;
+    background-color: white;
+    border: rgb(255, 255, 255) 15px solid;
+}
+
+/* Parte superior */
+.top {
+    display: flex;
+    gap: 10px;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.grande {
+    background-color: #aaa;
+    height: 90%;
+}
+
+.horizontal {
+    margin-top: 3px;
+    background-color: #aaa;
+    height: 50px;
+}
+
+.right-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.chica1,
+.chica2 {
+    background-color: #aaa;
+    aspect-ratio: 1 / 1; /* Hace que el ancho y alto sean iguales */
+    width: 100px;
+}
+
+
+/* Parte inferior */
+.bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.izq-abajo {
+    background-color: #aaa;
+    width: 35%;
+    height: 200px;
+}
+
+.right-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.der-arriba,
+.der-abajo {
+    background-color: #aaa;
+    height: 95px;
+}
