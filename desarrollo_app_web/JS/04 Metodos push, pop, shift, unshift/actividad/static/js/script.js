@@ -148,6 +148,8 @@ function comprasPop() {
 
 // 🧠 Ejercicio 3: Agregar al inicio
 function coloresUnshift(){
+    alert("Presione enter para mostrar la lista completa...");
+    mostrarLista_colores();   
     colores.unshift("amarillo");
     alert(`Lista de colores actualizada: ${colores.join(", ")}`);
     alert("Presione enter para mostrar la lista completa...");
