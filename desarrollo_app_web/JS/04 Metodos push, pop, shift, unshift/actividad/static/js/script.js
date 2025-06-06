@@ -181,7 +181,11 @@ function numerosCombinacion() {
 
 // 🧠 Ejercicio 6: Agregar elementos en orden inverso
 function agregarOrdenInverso() {
-    orden.unshift(3, 2, 1);
+    // Agregar elementos al arreglo
+    // Mostrar [3,2,1]
+    orden.push(1)
+    orden.unshift(2);
+    orden.unshift(3);
     console.log(`Arreglo en orden inverso: ${orden}`);
     alert(`Arreglo en orden inverso: ${orden.join(", ")}`);
     alert("Presione enter para mostrar la lista completa...");
