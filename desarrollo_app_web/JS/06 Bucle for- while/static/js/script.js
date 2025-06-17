@@ -91,17 +91,6 @@ function tablaMultiplicar(){
     document.getElementById("resultado").innerHTML = `<p>Tabla de multiplicar del ${numero}: <br><strong>{<br>${multiplicacion.join("<br>")}<br>    }</strong></p>`;
 }
 
-        // <p>🧩 Ejercicio 6: Sumar hasta que se ingrese cero</p>
-        // <button class = "btn" onclick = "sumarHastaCero()">Sumar hasta cero</button>
-        // <p>🧩 Ejercicio 7: Mostrar letras de una palabra</p>
-        // <button class = "btn" onclick = "mostrarLetras()">Mostrar letras</button>
-        // <p>🧩 Ejercicio 8: Validar contraseña</p>
-        // <button class = "btn" onclick = "validarContrasena()">Validar contraseña</button>
-        // <p>🧩 Ejercicio 9: Promedio de notas</p>
-        // <button class = "btn" onclick = "promedioNotas()">Calcular promedio</button>
-        // <p>🧩 Ejercicio 10: Contar cuántos son mayores de edad</p>
-        // <button class = "btn" onclick = "contarMayoresEdad()">Contar mayores de edad</button>
-
 // ✅ Ejercicio 6: Sumar hasta que se ingrese cero
 // Con while, sigue pidiendo números con prompt() y súmalos, hasta que el usuario escriba 0. Muestra el total acumulado.
 let sumaAcumulada  = [];
