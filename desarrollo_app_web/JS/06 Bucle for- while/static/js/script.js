@@ -126,3 +126,37 @@ function sumarHastaCero() {
     document.getElementById("resultado").innerHTML = `<p>Total acumulado: <strong>${suma}</strong></p>`;
     document.getElementById("resultado").innerHTML += `<p>Números sumados: <strong>{${sumaAcumulada.join(", ")}}</strong></p>`;
 }
+
+// ✅ Ejercicio 7: Mostrar letras de una palabra
+// Pide al usuario una palabra y usa un for para mostrar cada letra por separado en el HTML.
+let letrasPalabra = [];
+function mostrarLetras() {
+    let palabra = prompt("Introduce una palabra:");
+    if (!palabra) {
+        document.getElementById("resultado").innerHTML = "<p>Por favor, introduce una palabra válida.</p>";
+        return;
+    }
+    letrasPalabra = []; // Reiniciar el array letrasPalabra
+    document.getElementById("resultado").innerHTML = ""; // Limpiar el contenido previo del elemento con id "resultado"
+    
+    for (let i = 0; i < palabra.length; i++) {
+        letrasPalabra.push(palabra[i]);
+    }
+    document.getElementById("resultado").innerHTML = `<p>Letras de la palabra "${palabra}": <strong>{${letrasPalabra.join(" - ")}}</strong></p>`;
+}
+
+// ✅ Ejercicio 8: Validar contraseña
+// Pide una contraseña al usuario y sigue pidiendo con while hasta que escriba "admin123". Luego, muestra "Acceso concedido".
+
+contraseña = ["admin123"];
+function validarContraseña() {
+    while (true) {
+        let inputContraseña = prompt("Introduce la contraseña:");
+        if (inputContraseña === contraseña[0]) {
+            document.getElementById("resultado").innerHTML = "<p>Acceso concedido.</p>";
+            break; // Terminar el bucle si la contraseña es correcta
+        } else {
+            document.getElementById("resultado").innerHTML = "<p>Contraseña incorrecta. Inténtalo de nuevo.</p>";
+        }
+    }
+}
