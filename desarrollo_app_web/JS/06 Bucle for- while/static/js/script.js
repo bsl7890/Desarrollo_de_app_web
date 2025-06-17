@@ -160,3 +160,63 @@ function validarContraseña() {
         }
     }
 }
+
+// ✅ Ejercicio 9: Promedio de notas
+// Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota, calcula el promedio y lo muestra.
+let notas = [];
+function promedioNotas() {
+    let cantidadNotas = parseInt(prompt("¿Cuántas notas vas a ingresar?"));
+    if (isNaN(cantidadNotas) || cantidadNotas <= 0) {
+        document.getElementById("resultado").innerHTML = "<p>Por favor, introduce un número válido mayor que 0.</p>";
+        return;
+    }
+    
+    notas = []; // Reiniciar el array notas
+    let suma = 0;
+    
+    for (let i = 1; i <= cantidadNotas; i++) {
+        let nota = parseFloat(prompt(`Introduce la nota ${i}:`));
+        if (isNaN(nota)) {
+            document.getElementById("resultado").innerHTML = "<p>Por favor, introduce una nota válida.</p>";
+            return;
+        }
+        notas.push(nota);
+        suma += nota;
+    }
+    
+    let promedio = suma / cantidadNotas;
+
+    document.getElementById("resultado").innerHTML = `<p>El promedio de las notas es: <strong>${promedio}</strong></p>`;
+    document.getElementById("resultado").innerHTML += `<p>Notas ingresadas: <strong>{${notas.join(", ")}}</strong></p>`;
+}
+
+
+// ✅ Ejercicio 10: Contar cuántos son mayores de edad
+// Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).
+
+let edades = [];
+function contarMayoresEdad() {
+    let cantidadPersonas = parseInt(prompt("¿Cuántas personas vas a ingresar?"));
+    if (isNaN(cantidadPersonas) || cantidadPersonas <= 0) {
+        document.getElementById("resultado").innerHTML = "<p>Por favor, introduce un número válido mayor que 0.</p>";
+        return;
+    }
+    
+    edades = []; // Reiniciar el array edades
+    let mayoresEdad = 0;
+    
+    for (let i = 1; i <= cantidadPersonas; i++) {
+        let edad = parseInt(prompt(`Introduce la edad de la persona ${i}:`));
+        if (isNaN(edad) || edad < 0) {
+            document.getElementById("resultado").innerHTML = "<p>Por favor, introduce una edad válida.</p>";
+            return;
+        }
+        edades.push(edad);
+        if (edad >= 18) {
+            mayoresEdad++;
+        }
+    }
+    
+    document.getElementById("resultado").innerHTML = `<p>Hay <strong>${mayoresEdad}</strong> personas mayores de edad.</p>`;
+    document.getElementById("resultado").innerHTML += `<p>Edades ingresadas: <strong>{${edades.join(", ")}}</strong></p>`;
+}
