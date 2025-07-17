@@ -62,4 +62,12 @@ input[type="number"]:focus {
     outline: none;
     border-color: #007BFF; /* azul al hacer focus */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    transform: scale(1.04);
+    transition: 0.5s;
 }
+
+input:not(:focus){
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+    
