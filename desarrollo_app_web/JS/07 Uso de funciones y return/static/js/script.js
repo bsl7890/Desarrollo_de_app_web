@@ -31,7 +31,6 @@ function repetirHastaN() {
 inputPalabra.value = "";
 inputPalabra.focus()
 inputnumero.value = ""
-inputnumero.focus()
 }
 
 // 🟦 Ejercicio 2: Comparar dos números
@@ -63,7 +62,6 @@ function compracion2Numeros(){
 inputnumero1.value = ""
 inputnumero1.focus()
 inputnumero2.value = ""
-inputnumero2.focus()
 }
 
 
@@ -80,14 +78,16 @@ function verificarParImpar(numero){
 }
 
 function verifacionnumeroparOimpar(){
-    const numero = parseInt(document.getElementById("numeroParImpar").value);
+    const numeroParImpar = document.getElementById("numeroParImpar");
+    const numero = parseInt(numeroParImpar.value);
     if(isNaN(numero) || numero <= 0){
         document.getElementById("resultado3").innerText = "Entrada inválida. ingrese un numero o un número mayor a 0.";
         return;
     }
     resultado = verificarParImpar(numero);
     document.getElementById("resultado3").innerText = `${resultado}`;
-
+numeroParImpar.value = ""
+numeroParImpar.focus()
 }
 
 
@@ -151,6 +151,5 @@ function PontenciaConBucle(){
     inputPotencia.value = ""
     inputPotencia.focus()
     inputNumero.value = ""
-    inputNumero.focus()
 
 }
