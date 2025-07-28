@@ -151,5 +151,4 @@ function PontenciaConBucle(){
     inputPotencia.value = ""
     inputPotencia.focus()
     inputNumero.value = ""
-
 }
