@@ -1,3 +1,6 @@
+console.log("Conectado correctamente")
+console.log('Benjamin santander 4°E 31/07/2025')
+console.log("Descripcion: Le pedimos a un usuario que ingrese una palabra y luego contamos cuantas palabras tienen mas de 5 letras")
 // Ejercicio 2: Crear función con parámetro y lógica con botón
 // Instrucción:
 // Crea un programa que incluya un archivo HTML con los siguientes elementos:
