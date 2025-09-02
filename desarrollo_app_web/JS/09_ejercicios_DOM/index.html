@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <div class="form-card">
+        <h1>Formulario</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre...">
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" required min="14" max="100">
+
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso" required>
+                <option value="">-- Selecciona tu curso --</option>
+                <option value="3medio">3° Medio</option>
+                <option value="4medio">4° Medio</option>
+            </select>
+
+            <label>Jornada</label>
+            <div class="options">
+                <label><input type="radio" name="jornada" value="mañana" required> Mañana</label>
+                <label><input type="radio" name="jornada" value="tarde" required> Tarde</label>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox" name="reglamento" required> Acepto el reglamento</label>
+            </div>
+
+            <button type="button" onclick="validarFormulario()">Enviar 🚀</button>  
+        </form> 
+        <p id="resultado" class="resultado"></p>
+    </div>
+<script src="static/js/main.js"></script>
+</body>
+</html>
