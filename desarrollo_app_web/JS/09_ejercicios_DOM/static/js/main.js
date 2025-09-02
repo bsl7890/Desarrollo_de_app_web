@@ -20,46 +20,68 @@
   // Función principal
 function validarFormulario() {
 
-    // Obtener valores
-    let nombre = document.getElementById("nombre").value.trim();
-    const edad = parseInt(document.getElementById("edad").value, 10);
-    const curso = document.getElementById("curso").value;
-    const jornada = document.querySelector("input[name='jornada']:checked");
-    const aceptaReglamento = document.querySelector("input[name='reglamento']").checked;
+    // Obtener elementos
+    const inputNombre = document.getElementById("nombre");
+    const inputEdad = document.getElementById("edad");
+    const inputCurso = document.getElementById("curso");
+    const inputJornada = document.querySelector("input[name='jornada']:checked");
+    const inputReglamento = document.querySelector("input[name='reglamento']");
+    const resultado = document.getElementById("resultado");
+    const resultCard = document.getElementById("resultCard");
+
+    // Valores
+    let nombre = inputNombre.value.trim();
+    const edad = parseInt(inputEdad.value, 10);
+    const curso = inputCurso.value;
+    const jornada = inputJornada;
 
     // Validaciones
     if (nombre.length < 2) {
-      resultado.textContent = "El nombre debe tener al menos 2 caracteres.";
-      return;
+        resultCard.style.display = "block";
+        resultado.textContent = "El nombre debe tener al menos 2 caracteres.";
+        return;
     }
     if (isNaN(edad) || edad < 14 || edad > 100) {
-      resultado.textContent = "La edad debe estar entre 14 y 100.";
-      return;
+        resultCard.style.display = "block";
+        resultado.textContent = "La edad debe estar entre 14 y 100.";
+        return;
     }
     if (!curso) {
-      resultado.textContent = "Debes seleccionar un curso.";
-      return;
+        resultCard.style.display = "block";
+        resultado.textContent = "Debes seleccionar un curso.";
+        return;
     }
     if (!jornada) {
-      resultado.textContent = "Debes seleccionar una jornada.";
-      return;
+        resultCard.style.display = "block";
+        resultado.textContent = "Debes seleccionar una jornada.";
+        return;
     }
-    if (!aceptaReglamento) {
-      resultado.textContent = "Debes aceptar el reglamento.";
-      return;
+    if (!inputReglamento.checked) {
+        resultCard.style.display = "block";
+        resultado.textContent = "Debes aceptar el reglamento.";
+        return;
     }
 
-    // Normalizar nombre (primera letra de cada palabra en mayúscula)
-    nombre = nombre.replace(/\b\w/g, c => c.toUpperCase()).toLowerCase();
+    // Normalizar nombre
+    nombre = nombre.replace(/\b\w/g, c => c.toUpperCase());
 
+    // Texto del curso
     let cursoTexto;
-    if (curso === "3medio") {
-    cursoTexto = "3° Medio";
-    } else if (curso === "4medio") {
-    cursoTexto = "4° Medio";
-    } else {
-    cursoTexto = "Curso desconocido";
-    }
+    if (curso === "3medio") cursoTexto = "3° Medio";
+    else if (curso === "4medio") cursoTexto = "4° Medio";
+    else cursoTexto = "Curso desconocido";
 
-    resultado.textContent = `Bienvenido/a ${nombre},\n${edad} años,\ncurso ${cursoTexto},\njornada: ${jornada.value}.`;
+    // Mostrar resultado
+    resultado.innerHTML = `Bienvenido/a <strong>${nombre}</strong><br>${edad} años<br>Curso: ${cursoTexto}<br>Jornada: ${jornada.value}`;
+
+    // Mostrar panel
+    resultCard.style.display = "block";
+
+    // Limpiar campos
+    inputNombre.value = "";
+    inputEdad.value = "";
+    inputCurso.value = "";
+    if (inputJornada) inputJornada.checked = false;
+    inputReglamento.checked = false;
 }
+

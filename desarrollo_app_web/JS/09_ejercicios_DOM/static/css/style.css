@@ -41,3 +41,24 @@ button{
 }
 button:hover{transform:scale(1.05); box-shadow:0 0 40px rgba(255,0,212,0.9);}
 footer{text-align:center; margin-top:18px; font-size:13px; opacity:.7;}
+
+.resultado {
+  white-space: pre-line;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.result-card {
+  display: none; /* Oculto por defecto */
+  background: rgba(20, 20, 35, 0.75);
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  width: 300px;
+  min-height: 200px;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+}
+
