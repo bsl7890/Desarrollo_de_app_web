@@ -17,9 +17,13 @@
     }
     animate();
 
-  // Función principal
-function validarFormulario() {
 
+// ----------------------------
+// 📌 Arreglo global de registros
+// ----------------------------
+const registros = [];
+
+function validarFormulario() {
     // Obtener elementos
     const inputNombre = document.getElementById("nombre");
     const inputEdad = document.getElementById("edad");
@@ -27,6 +31,7 @@ function validarFormulario() {
     const inputJornada = document.querySelector("input[name='jornada']:checked");
     const inputReglamento = document.querySelector("input[name='reglamento']");
     const resultado = document.getElementById("resultado");
+    const resumen = document.getElementById("resumen");
     const resultCard = document.getElementById("resultCard");
 
     // Valores
@@ -71,8 +76,23 @@ function validarFormulario() {
     else if (curso === "4medio") cursoTexto = "4° Medio";
     else cursoTexto = "Curso desconocido";
 
-    // Mostrar resultado
+    // ----------------------------
+    // 📌 Guardar registro en el arreglo
+    // ----------------------------
+    registros.push({
+        nombre: nombre,
+        edad: edad,
+        curso: cursoTexto,
+        jornada: jornada.value
+    });
+
+    // Mostrar saludo
     resultado.innerHTML = `Bienvenido/a <strong>${nombre}</strong><br>${edad} años<br>Curso: ${cursoTexto}<br>Jornada: ${jornada.value}`;
+
+    // Contar por jornada
+    const mañana = registros.filter(r => r.jornada === "mañana").length;
+    const tarde = registros.filter(r => r.jornada === "tarde").length;
+    resumen.textContent = `Registrados: ${mañana} en Mañana, ${tarde} en Tarde.`;
 
     // Mostrar panel
     resultCard.style.display = "block";
@@ -82,6 +102,18 @@ function validarFormulario() {
     inputEdad.value = "";
     inputCurso.value = "";
     if (inputJornada) inputJornada.checked = false;
-    inputReglamento.checked = false;
-}
+    inputReglamento.checked = false;    
+}  
 
+function limpiarTodo() {
+    const resultado = document.getElementById("resultado");
+    const resumen = document.getElementById("resumen");
+    const resultCard = document.getElementById("resultCard");
+
+    registros.length = 0; // vaciar arreglo
+    resultado.textContent = "";
+    resumen.textContent = "";
+    resultCard.style.display = "none";
+
+    document.querySelector("form").reset();
+}

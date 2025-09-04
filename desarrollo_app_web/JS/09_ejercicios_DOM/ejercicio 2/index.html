@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Promedio</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <div class="form-card">
+    <h1>Calculadora de Promedio</h1>
+    <form>
+      <label for="nota">Ingresar nota (1.0 - 7.0)</label>
+      <input type="number" step="0.1" id="nota" name="nota" min="1" max="7" required placeholder="Ej: 5.5">
+
+      <div class="options">
+        <button type="button" onclick="agregarNota()">Agregar nota ➕</button>
+        <button type="button" onclick="calcularPromedio()">Calcular promedio 📊</button>
+        <button type="button" onclick="eliminarUltima()">Eliminar última ⬅️</button>
+        <button type="button" onclick="limpiarNotas()">Limpiar 🧹</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="result-card" id="resultCard">
+    <h2>Resultado:</h2>
+    <p id="resultado" class="resultado"></p>
+  </div>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
