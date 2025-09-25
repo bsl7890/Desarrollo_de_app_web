@@ -8,11 +8,11 @@ body {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center; /* 👈 cambia esto de center a start */
-    height: auto;       /* 👈 permite que el contenido crezca */
+    align-items: center; 
+    height: auto;       
     font-family: Arial, sans-serif;
     flex-direction: column;
-    flex-wrap: nowrap;  /* 👈 no necesitas que envuelva */
+    flex-wrap: nowrap;
 }
 .container {
     width: 1000px;
@@ -34,15 +34,20 @@ header{
     cursor: pointer;
     box-shadow: black 5px 4px 8px 0px;
     border: black 2px solid;
-}
-
+    margin-right: 20px;
+} 
 .top{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-top: 20px;
     background-color: lightgray;
-    padding: 10px;
+    padding-bottom: 30px;
     align-items: center;
+
+}
+.top .title{
+    margin-left: 20px;
 }
 .top h1{
     font-size: 30px;
@@ -73,7 +78,7 @@ header{
 }
 .box{
     padding: 20px;
-    border: black 2px solid;
+    border: black 1px solid;
 }
 .definition{
     background-color: white;
@@ -100,7 +105,6 @@ header{
 .definition {
   display: flex;
   gap: 20px;
-  text-align: center;
   align-items: center;
 }
 .definition .definition-text{
